@@ -1,0 +1,251 @@
+@font-face{
+    font-family: nb;
+    src: url(./NBInternationalProBoo.ttf);
+}
+@font-face{
+    font-family: rejoy;
+    src: url(./Rejouice-Headline.ttf)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "nb";
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#page1{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+}
+
+#page1 video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+#cursor{
+    width: 7.5vw;
+    height: 7.5vw;
+    background-color: #FF5F38;
+    border-radius:50%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%,-50%);
+}
+#cursor h5{
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+
+#page1-content{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.174); */
+    color: #fff;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    /* padding-bottom: 4vw; */
+}
+
+
+nav{
+    width: 100%;
+    height: 100px;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vw 3vw;
+    color: #fff;
+}
+nav h3{
+    font-weight: 300;
+    font-size: 1.4vw;
+}
+#page1-content h1{
+    font-family: "rejoy";
+    font-size: 27vw;
+    font-weight: 150;
+    line-height: 27vw;
+}
+#page1-content h1 span{
+    font-family: "rejoy";
+}
+
+#page2{
+    width: 100%;
+    height: 100vh;
+    /* background-color: aqua; */
+    padding: 5vw 2.8vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#page2 #nav2{
+    height: 100px;
+    width: 100%;
+    padding: 3vw 0;
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.852);
+}
+#nav2 h3{
+    font-size: 1.7vw;
+    font-weight: 200;
+}
+#nav2 h4{
+    font-size: 1.6vw;
+    font-weight: 200;
+}
+#page2-content{
+    overflow: hidden;
+}
+#page2-content h1{
+    /* padding: 1vw 2vw; */
+    /* background-color: blue; */
+    font-size: 4vw;
+    font-weight: 300;
+}
+
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 3vw;
+}
+#page3top{
+    /* background-color: red; */
+    text-align: center;
+    margin-bottom: 8vw;
+}
+#page3top h4{
+    font-size: 1vw;
+    font-weight: 400;
+    margin-bottom: 1vw;
+}
+#page3top h4 span{
+    background-color: black;
+    color: #fff;
+    font-size: 0.6vw;
+    border-radius: 10px;
+    padding: 5px 8px;
+}
+#page3top h2{
+    font-size: 4vw;
+    font-weight: 500;
+}
+#page3-elem{
+    height: 75vh;
+    width: 100%;
+    /* background-color: peru; */
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    /* position: relative; */
+    justify-content: space-between;
+}
+#page3-elem .box{
+    height: 100%;
+    width: 32.5%;
+    /* background-color: blueviolet; */
+    position: relative;
+}
+#page3-elem .box video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#page3-elem .box img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 1s;
+}
+#page3-elem .box:hover img{
+    opacity: 0;
+}
+#page4{
+    width: 100%;
+    min-height: 100vh;
+    padding: 3vw;
+    position: relative;
+}
+#page4top h4{
+    font-size: 1.7vw;
+    margin-top: 3vw;
+    font-weight: 400;
+}
+#page4top h3{
+    height: 40px;
+    width: 100%;
+    /* background-color: antiquewhite; */
+    font-size: 1.6vw;
+    margin-bottom: 1.5vw;
+    border-bottom: 1px solid #000;
+    font-weight: 400;
+}
+#page4top h2{
+    font-size: 4vw;
+    padding-left: 2vw;
+    font-weight: 500;
+}
+#page5{
+    width: 100%;
+    height: 100vh;
+    /* background-color: #000; */
+    position: relative;
+
+}
+#page5content{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* z-index: 9; */
+    justify-content: center;
+}
+#page5 #cursor2{
+    width: 7.5vw;
+    height: 7.5vw;
+    background-color: #000000;
+    border-radius:50%;
+    position: fixed;
+    color: #fff;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%,-50%);
+}
+#page5content video{
+    /* object-fit: cover; */
+    height: 100%;
+    /* z-index: 10; */
+}
+#page5 svg{
+    position: absolute;
+    height: 65%;
+    z-index: 9;
+}
